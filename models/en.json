@@ -1,0 +1,97 @@
+{
+  "invocation": "my test app",
+  "version": "4.0",
+  "intents": {
+    "YesIntent": {
+      "phrases": [
+        "yes",
+        "yes please",
+        "sure"
+      ]
+    },
+    "NoIntent": {
+      "phrases": [
+        "no",
+        "no thanks"
+      ]
+    },
+    "CancelIntent": {
+      "phrases": [
+        "cancel",
+        "goodbye"
+      ]
+    },
+    "RepeatIntent": {
+      "phrases": [
+        "repeat",
+        "repeat that",
+        "say it again"
+      ]
+    },
+    "StartOverIntent": {
+      "phrases": [
+        "start again",
+        "reset",
+        "restart"
+      ]
+    },
+    "PizzaIntent": {
+      "phrases": [
+        "pizza",
+        "pizza please"
+      ]
+    },
+    "AnimalIntent": {
+      "phrases": [
+        "animals",
+        "animals please",
+        "do you have a {animal}",
+        "a {animal}",
+        "{animal}",
+        "do you have {number} {animal}",
+        "{number} {animal}",
+        "I have {number} {animal}",
+        "{number}",
+        "number {number}",
+        "num {number}"
+      ],
+      "entities": {
+        "animal": {
+          "type": "ANIMAL_SYNONYMS"
+        },
+        "number": {
+          "type": {
+            "alexa": "AMAZON.NUMBER"
+          }
+        }
+      }
+    }
+  },
+  "entityTypes": {
+    "ANIMAL_SYNONYMS": {
+      "values": [
+        {
+          "value": "dog",
+          "synonyms": [
+            "dogs",
+            "puppy",
+            "puppies",
+            "doggie",
+            "fido",
+            "spot"
+          ]
+        },
+        {
+          "value": "cat",
+          "synonyms": [
+            "cats",
+            "kitten",
+            "kittens",
+            "kitty",
+            "fluffy"
+          ]
+        }
+      ]
+    }
+  }
+}

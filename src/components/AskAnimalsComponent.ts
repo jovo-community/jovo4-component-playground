@@ -8,34 +8,31 @@ import { AskMainMenuComponent } from './AskMainMenuComponent';
 export class AskAnimalsComponent extends BaseComponent {
     START() {
 
-        if (!this.$session.data.animalType && !this.$session.data.animalCount) {
+        if (!this.$component.data.animalType && !this.$component.data.animalCount) {
             return this.$send('What animals do you own?')
         }
 
-        if (!this.$session.data.animalType) {
+        if (!this.$component.data.animalType) {
             return this.$send('What of animal?')
         }
 
-        // if (!this.$session.data.animalCount) {
+        // if (!this.$component.data.animalCount) {
         //     return this.$send('How many do you have?')
         // }
 
         //all slots filled
-        this.$send(`Congratulations! You have ${this.$session.data.animalCount} ${this.$session.data.animalType}.`);
-
-        this.$session.data.animalType = undefined;
-        this.$session.data.animalCount = undefined;
+        this.$send(`Congratulations! You have ${this.$component.data.animalCount} ${this.$component.data.animalType}.`);
 
         return this.$redirect(AskMainMenuComponent);        
     }
 
     AnimalIntent() {
         if (this.$entities.animal) {
-            this.$session.data.animalType = this.$entities.animal.resolved;
+            this.$component.data.animalType = this.$entities.animal.resolved;
         }
 
         if (this.$entities.number) {
-            this.$session.data.animalCount = this.$entities.number.resolved;
+            this.$component.data.animalCount = this.$entities.number.resolved;
         }
 
         return this.START();

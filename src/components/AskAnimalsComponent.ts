@@ -13,7 +13,7 @@ export class AskAnimalsComponent extends BaseComponent {
         }
 
         if (!this.$component.data.animalType) {
-            return this.$send('What of animal?')
+            return this.$send('What type of animal?')
         }
 
         // if (!this.$component.data.animalCount) {

@@ -4,8 +4,11 @@ import { CollectBookRoomComponent, RoomInfo } from './CollectBookRoomComponent';
 
 // NOTE: This component delegates the filling of all slots to another component.
 // Then it handles making the API call to book the room.
+// This also shows the registration of a subcomponent.
 
-@Component({})
+@Component({
+    components: [CollectBookRoomComponent]
+})
 export class BookRoomComponent extends BaseComponent {
     START() {
         this.$send(`Let's book you a room.`)

@@ -1,9 +1,9 @@
 import { Component, BaseComponent } from '@jovotech/framework';
-import { AskEnjoyPizzaComponent } from './AskEnjoyPizzaComponent';
-import { MainMenuOutput } from '../output/MainMenuOutput';
 import { AskAnimalsComponent } from './AskAnimalsComponent';
-import { GlobalComponent } from './GlobalComponent';
+import { AskEnjoyPizzaComponent } from './AskEnjoyPizzaComponent';
 import { BookRoomComponent } from './BookRoomComponent';
+import { GlobalComponent } from './GlobalComponent';
+import { MainMenuOutput } from '../output/MainMenuOutput';
 
 // NOTE: This component shows constraining intents to a specific state
 

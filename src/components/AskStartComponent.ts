@@ -1,4 +1,4 @@
-import { Component, BaseComponent, Intents, Global } from '@jovotech/framework';
+import { Component, BaseComponent, Intents } from '@jovotech/framework';
 import { YesNoOutput } from '../output/YesNoOutput';
 import { GlobalComponent } from './GlobalComponent';
 import { AskMainMenuComponent } from './AskMainMenuComponent';

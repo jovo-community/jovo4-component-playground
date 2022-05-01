@@ -53,11 +53,17 @@
         "I have {number} {animal}",
         "{number}",
         "number {number}",
-        "num {number}"
+        "num {number}",
+        "{size}",
+        "{size} {animal}",
+        "{number} {size} {animal}"
       ],
       "entities": {
         "animal": {
           "type": "ANIMAL_SYNONYMS"
+        },
+        "size": {
+          "type": "ANIMAL_SIZE"
         },
         "number": {
           "type": {
@@ -89,6 +95,32 @@
             "kittens",
             "kitty",
             "fluffy"
+          ]
+        }
+      ]
+    },
+    "ANIMAL_SIZE": {
+      "values": [
+        {
+          "value": "small",
+          "synonyms": [
+            "little",
+            "smallish"
+          ]
+        },
+        {
+          "value": "medium",
+          "synonyms": [
+            "normal",
+            "normal sized",
+            "regular"
+          ]
+        },
+        {
+          "value": "large",
+          "synonyms": [
+            "big",
+            "huge"
           ]
         }
       ]

@@ -41,89 +41,151 @@
         "pizza please"
       ]
     },
-    "AnimalIntent": {
+    "BookRoomIntent": {
       "phrases": [
-        "animals",
-        "animals please",
-        "do you have a {animal}",
-        "a {animal}",
-        "{animal}",
-        "do you have {number} {animal}",
-        "{number} {animal}",
-        "I have {number} {animal}",
-        "{number}",
-        "number {number}",
-        "num {number}",
-        "{size}",
-        "{size} {animal}",
-        "{number} {size} {animal}"
+        "book room",
+        "make a reservation",
+        "hotel room",
+        "book a room in {city}",
+        "room in {city}",
+        "{roomType} room in {city}",
+        "{roomType} in {city}",
+        "in {city}",
+        "{city}",
+        "{roomType} room"
       ],
       "entities": {
-        "animal": {
-          "type": "ANIMAL_SYNONYMS"
+        "roomType": {
+          "type": "ROOM_TYPE"
         },
-        "size": {
-          "type": "ANIMAL_SIZE"
-        },
-        "number": {
-          "type": {
-            "alexa": "AMAZON.NUMBER"
+        "city": {
+          "type": "CITY_TYPE"
+        }
+      },
+      "AnimalIntent": {
+        "phrases": [
+          "animals",
+          "animals please",
+          "do you have a {animal}",
+          "a {animal}",
+          "{animal}",
+          "do you have {number} {animal}",
+          "{number} {animal}",
+          "I have {number} {animal}",
+          "{number}",
+          "number {number}",
+          "num {number}",
+          "{size}",
+          "{size} {animal}",
+          "{number} {size} {animal}"
+        ],
+        "entities": {
+          "animal": {
+            "type": "ANIMAL_SYNONYMS"
+          },
+          "size": {
+            "type": "ANIMAL_SIZE"
+          },
+          "number": {
+            "type": {
+              "alexa": "AMAZON.NUMBER"
+            }
           }
         }
       }
-    }
-  },
-  "entityTypes": {
-    "ANIMAL_SYNONYMS": {
-      "values": [
-        {
-          "value": "dog",
-          "synonyms": [
-            "dogs",
-            "puppy",
-            "puppies",
-            "doggie",
-            "fido",
-            "spot"
-          ]
-        },
-        {
-          "value": "cat",
-          "synonyms": [
-            "cats",
-            "kitten",
-            "kittens",
-            "kitty",
-            "fluffy"
-          ]
-        }
-      ]
     },
-    "ANIMAL_SIZE": {
-      "values": [
-        {
-          "value": "small",
-          "synonyms": [
-            "little",
-            "smallish"
-          ]
-        },
-        {
-          "value": "medium",
-          "synonyms": [
-            "normal",
-            "normal sized",
-            "regular"
-          ]
-        },
-        {
-          "value": "large",
-          "synonyms": [
-            "big",
-            "huge"
-          ]
-        }
-      ]
+    "entityTypes": {
+      "ANIMAL_SYNONYMS": {
+        "values": [
+          {
+            "value": "dog",
+            "synonyms": [
+              "dogs",
+              "puppy",
+              "puppies",
+              "doggie",
+              "fido",
+              "spot"
+            ]
+          },
+          {
+            "value": "cat",
+            "synonyms": [
+              "cats",
+              "kitten",
+              "kittens",
+              "kitty",
+              "fluffy"
+            ]
+          }
+        ]
+      },
+      "ANIMAL_SIZE": {
+        "values": [
+          {
+            "value": "small",
+            "synonyms": [
+              "little",
+              "smallish"
+            ]
+          },
+          {
+            "value": "medium",
+            "synonyms": [
+              "normal",
+              "normal sized",
+              "regular"
+            ]
+          },
+          {
+            "value": "large",
+            "synonyms": [
+              "big",
+              "huge"
+            ]
+          }
+        ]
+      },
+      "ROOM_TYPE": {
+        "values": [
+          {
+            "value": "king"
+          },
+          {
+            "value": "queen"
+          },
+          {
+            "value": "deluxe"
+          }
+        ]
+      },
+      "CITY_TYPE": {
+        "values": [
+          {
+            "value": "New York City",
+            "synonyms": [
+              "New York",
+              "Big Apple"
+            ]
+          },
+          {
+            "value": "Los Angeles",
+            "synonyms": [
+              "LA",
+              "L. A."
+            ]
+          },
+          {
+            "value": "Chicago"
+          },
+          {
+            "value": "phoenix",
+            "synonyms": [
+              "Phoenix"
+            ]
+          }
+        ]
+      }
     }
   }
 }

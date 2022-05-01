@@ -1,10 +1,12 @@
 import { App } from '@jovotech/framework';
 import { AskAnimalsComponent } from './components/AskAnimalsComponent';
 
+import { BookRoomComponent } from './components/BookRoomComponent';
 import { AskEnjoyPizzaComponent } from './components/AskEnjoyPizzaComponent';
 import { AskMainMenuComponent } from './components/AskMainMenuComponent';
 import { AskStartComponent } from './components/AskStartComponent';
 import { GlobalComponent } from './components/GlobalComponent';
+import { CollectBookRoomComponent } from './components/CollectBookRoomComponent';
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +33,8 @@ const app = new App({
     AskStartComponent,
     AskMainMenuComponent,
     AskAnimalsComponent,
+    BookRoomComponent,
+    CollectBookRoomComponent,
   ],
 
   /*
